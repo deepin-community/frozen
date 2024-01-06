@@ -1,0 +1,19 @@
+Description: don't use -Werror
+Author: Rene Engelhard <rene@debian.org>
+
+---
+Origin: vendor
+Forwarded: no
+Last-Update: 2023-07-24
+
+--- frozen-1.1.1.orig/tests/CMakeLists.txt
++++ frozen-1.1.1/tests/CMakeLists.txt
+@@ -28,7 +28,7 @@ string(CONCAT generator
+   "$<$<OR:$<CXX_COMPILER_ID:GNU>"
+         ",$<CXX_COMPILER_ID:Clang>"
+         ",$<CXX_COMPILER_ID:AppleClang>>"
+-   ":-Wall;-Wextra;-Wpedantic;-Werror;-Wshadow;"
++   ":-Wall;-Wextra;-Wpedantic;-Wshadow;"
+     "$<$<BOOL:${frozen.coverage}>:--coverage>>"
+   "$<$<CXX_COMPILER_ID:Intel>:"
+     "$<$<PLATFORM_ID:Windows>:/W3;/WX;>"

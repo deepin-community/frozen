@@ -1,5 +1,19 @@
-template-repository (1.0-1) unstable; urgency=medium
+frozen (1.1.1-3) unstable; urgency=medium
 
-  * Initial release
+  * debian/patches/no-werror.diff: don't use -Werror
+  * debian/patches/cstdint.diff: add missing #include <cstdint> to fix
+    build of the tests with gcc 13 
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Rene Engelhard <rene@debian.org>  Mon, 24 Jul 2023 22:02:12 +0000
+
+frozen (1.1.1-2) unstable; urgency=medium
+
+  * source-only upload to allow testing migration 
+
+ -- Rene Engelhard <rene@debian.org>  Mon, 24 Jul 2023 19:19:38 +0000
+
+frozen (1.1.1-1) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Rene Engelhard <rene@debian.org>  Sat, 17 Jun 2023 19:36:24 +0000

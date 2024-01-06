@@ -1,9 +1,19 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: template-repository
-Source: https://github.com/deepin-community/template-repository
+Source: https://github.com/serge-sans-paille/frozen/tags
+Upstream-Name: frozen
+Upstream-Contact: Serge sans Paille <serge.guelton@telecom-bretagne.eu>
 
-Files: *
-Copyright: 2023 Tsic404 <liuheng@deepin.org>
+Files:
+ *
+Copyright: Copyright 2017 Quarkslab
+License: Apache-2.0
+ On Debian systems the full text of the Apache License version 2.0 can be found
+ in /usr/share/common-licenses
+
+Files:
+ debian/*
+Copyright:
+ 2023 Rene Engelhard <rene@debian.org>
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -17,6 +27,7 @@ License: GPL-2+
  .
  You should have received a copy of the GNU General Public License
  along with this program. If not, see <https://www.gnu.org/licenses/>
- .
+Comment:
  On Debian systems, the complete text of the GNU General
  Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
