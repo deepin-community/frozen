@@ -1,0 +1,18 @@
+Description: fix build with gcc 13
+Author: Rene Engelhard <rene@debian.org>
+
+---
+Origin: vendor
+Forwarded: no
+Last-Update: 2023-07-24
+
+--- frozen-1.1.1.orig/include/frozen/bits/pmh.h
++++ frozen-1.1.1/include/frozen/bits/pmh.h
+@@ -29,6 +29,7 @@
+ 
+ #include <array>
+ #include <limits>
++#include <cstdint>
+ 
+ namespace frozen {
+ 
